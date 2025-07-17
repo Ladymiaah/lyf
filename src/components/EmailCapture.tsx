@@ -11,7 +11,13 @@ function EmailCapture() {
   };
 
   return (
+    <div>
+       {submitted && (
+  <p className="text-green-600 text-xl mt-2 text-center">Thanks for signing up!</p>
+)}
+
     <div className="flex justify-center mt-8 space-x-4">
+      
       {/* Input field with Send icon */}
       <div className="relative flex items-center border rounded-full px-4 py-1 focus-within:ring-2 focus-within:ring-black">
         <Send className="absolute left-3 text-black w-4 h-4" />
@@ -31,6 +37,9 @@ function EmailCapture() {
       >
         Sign Up
       </button>
+    
+    </div>
+   
     </div>
   );
 }
